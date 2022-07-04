@@ -2,7 +2,7 @@
 import inquirer from "inquirer";
 import fs from "fs";
 
-const generateMarkdown = require('./utils/generateMarkdown').default
+import generateMarkdown from './utils/generateMarkdown'
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -67,7 +67,7 @@ function writeToFile(fileName, data) { }
 function init() {
     inquirer.prompt(questions)
         .then((answers) => {
-            // Use user feedback for... whatever!!
+           generateMarkdown(answers);
         })
         .catch((error) => {
             if (error.isTtyError) {
