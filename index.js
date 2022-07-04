@@ -2,8 +2,7 @@
 import inquirer from "inquirer";
 import fs from "fs";
 
-import generateMarkdown from './utils/generateMarkdown'
-
+import generateMarkdown from '../Professional-README-Generator/utils/generateMarkdown.js'
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -61,13 +60,23 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) { 
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            console.error(err);
+        }
+        console.log("You've done it. Congradulations")
+        // file written successfully
+    })
+};
+
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
         .then((answers) => {
-           generateMarkdown(answers);
+           var data = generateMarkdown(answers);
+           writeToFile("README.md", data)
         })
         .catch((error) => {
             if (error.isTtyError) {
