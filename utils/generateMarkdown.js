@@ -41,10 +41,10 @@ function generateMarkdown(data) {
                 "<h2>Description</h2> " +
                 "<p>" + data.description + "</p>" +
 
-                "<h2>Installation</h2> " + "<br/>" +
+                "<h2>Installation</h2> " +
                 "<p>" + data.installation + "</p>" +
 
-                "<h2>Usage</h2> " + "<br/>" +
+                "<h2>Usage</h2> " +
                 "<p>" + data.usage + "</p>" +
 
                 // "<h2>License " + "<br/>" +
@@ -52,16 +52,16 @@ function generateMarkdown(data) {
                 renderLicenseSection(data.license) + 
 
 
-                "<h2>Contributors</h2> " + "<br/>" +
+                "<h2>Contributors</h2> " +
                 "<p>" + data.contributing + "</p>" +
 
-                "<h2>Testing</h2> " + "<br/>" +
+                "<h2>Testing</h2> " +
                 "<p>" + data.tests + "</p>" +
 
-                "<h2>Table of Contents</h2> " + "<br/>" +
+                "<h2>Table of Contents</h2> " +
                 "<p>" + data.github + "</p><br/>" +
 
-                "<h2>Questions</h2>" + "<br/>" +
+                "<h2>Questions</h2>" + 
                 "<p>" + data.email + "</p>";
 
 
