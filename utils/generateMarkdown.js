@@ -6,7 +6,7 @@ function renderLicenseBadge(license) {
         } else if (license === 'Boost') {
                 return "![license](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)";
         } else if (license === 'BSD') {
-                return "![license](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)"
+                return "![license](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)";
         } else {
                 return "";
         }
@@ -30,7 +30,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
         if (license) {
-                return "<h2> License </h2>\n" + renderLicenseBadge(license) + renderLicenseLink(license)
+                return "<h2> License </h2>\n" + renderLicenseBadge(license) + renderLicenseLink(license);
         } else {
                 return "";
         }
@@ -49,8 +49,8 @@ function generateMarkdown(data) {
                 "- [Usage](#usage) " + "\n" +
                 "- [Contributors](#contributors) " + "\n" +
                 "- [Testing](#testing) " + "\n" +
-                "- [Github Link](#github) " + "\n" +
-                "- [Email Address](#email) " + "\n" +
+                "- [Github](#github) " + "\n" +
+                "- [Email](#email) " + "\n" +
 
                 "<h2>Description</h2> " +
                 "<p>" + data.description + "</p>" +

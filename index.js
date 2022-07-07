@@ -49,7 +49,8 @@ const questions = [
         type: 'input',
         name: 'github',
         message: "Do you have a Github you'd like to add"
-    }, {
+    }, 
+    {
         type: 'input',
         name: 'email',
         message: "Please include your email address."
