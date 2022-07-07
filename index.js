@@ -30,12 +30,9 @@ const questions = [
         name: 'license',
         message: "Select License",
         choices: [
-            'MIT',
-            'GNU General Public License',
             'Apache',
-            'ISC',
-            'Mozilla',
-            'Open'
+            'Boost',
+            'BSD'
         ]
     },
     {
