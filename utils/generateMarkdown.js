@@ -37,7 +37,6 @@ function renderLicenseSection(license) {
 }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-        console.log("can you see me")
 
         return "##  <h1>" + data.title + "</h1>" +
 
@@ -61,7 +60,7 @@ function generateMarkdown(data) {
 
                 "<h2>Usage</h2> " +
                 "<p>" + data.usage + "</p>" +
-                // "[gif]("direct to my file")"
+                // "[Demo Video]( )" + "\n" +
 
                 "<h2>Contributors</h2> " +
                 "<p>" + data.contributing + "</p>" +
