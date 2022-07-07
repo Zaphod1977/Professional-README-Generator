@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
         if (license === 'Apache') {
-                return "![license](//img.shields.io/badge/License-Apache_2.0-blue.svg)";
+                return "![license](https://img.shields.io/badge/License-Apache_2.0-blue.svg)";
         } else if (license === 'Boost') {
-                return "![license](//img.shields.io/badge/License-Boost_1.0-lightblue.svg)";
+                return "![license](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)";
         } else if (license === 'BSD') {
-                return "![license](//img.shields.io/badge/License-BSD_3--Clause-blue.svg)"
+                return "![license](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)"
         } else {
                 return "";
         }
@@ -16,11 +16,11 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
         if (license === 'Apache') {
-                return "![license](https://opensource.org/licenses/Apache-2.0)";
+                return "[license](https://opensource.org/licenses/Apache-2.0)";
         } else if (license === 'Boost') {
-                return "![license](https://www.boost.org/LICENSE_1_0.txt)";
+                return "[license](https://www.boost.org/LICENSE_1_0.txt)";
         } else if (license === 'BSD') {
-                return "![license](https://opensource.org/licenses/BSD-3-Clause)";
+                return "[license](https://opensource.org/licenses/BSD-3-Clause)";
         } else {
                 return "";
         }
@@ -36,33 +36,33 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
         console.log("can you see me")
 
-        return "##  <h1>" + data.title + "<br/>" +
+        return "##  <h1>" + data.title + "</h1>" +
 
-                "<h2>Description " +
-                "<p>" + data.description + "<p/>" + "<br/>" +
+                "<h2>Description</h2> " +
+                "<h4>" + data.description + "</h4>" +
 
-                "<h2>Installation " + "<br/>" +
-                "<p>" + data.installation + "<br/>" +
+                "<h2>Installation</h2> " + "<br/>" +
+                "<p>" + data.installation + "</p>" +
 
-                "<h2>Usage " + "<br/>" +
-                "<p>" + data.usage + "</p><br/>" +
+                "<h2>Usage</h2> " + "<br/>" +
+                "<p>" + data.usage + "</p>" +
 
                 // "<h2>License " + "<br/>" +
                 // "<p>" + data.license + "<br/>" +
                 renderLicenseSection(data.license) + 
 
 
-                "<h2>Contributors " + "<br/>" +
-                "<p>" + data.contributing + "<br/>" +
+                "<h2>Contributors</h2> " + "<br/>" +
+                "<p>" + data.contributing + "</p>" +
 
-                "<h2>Testing " + "<br/>" +
-                "<p>" + data.tests + "<br/>" +
+                "<h2>Testing</h2> " + "<br/>" +
+                "<p>" + data.tests + "</p>" +
 
-                "<h2>Table of Contents " + "<br/>" +
-                "<p>" + data.github + "<br/><br/>" +
+                "<h2>Table of Contents</h2> " + "<br/>" +
+                "<p>" + data.github + "</p><br/>" +
 
-                "<h2>Questions " + "<br/>" +
-                "<p>" + data.email;
+                "<h2>Questions</h2>" + "<br/>" +
+                "<p>" + data.email + "</p>";
 
 
         // return `# ${data.title}
