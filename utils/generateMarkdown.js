@@ -16,11 +16,11 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
         if (license === 'Apache') {
-                return "[Apache](https://opensource.org/licenses/Apache-2.0)";
+                return "[  Apache](https://opensource.org/licenses/Apache-2.0)";
         } else if (license === 'Boost') {
-                return "[Boost](https://www.boost.org/LICENSE_1_0.txt)";
+                return "[  Boost](https://www.boost.org/LICENSE_1_0.txt)";
         } else if (license === 'BSD') {
-                return "[BSD](https://opensource.org/licenses/BSD-3-Clause)";
+                return "[  BSD](https://opensource.org/licenses/BSD-3-Clause)";
         } else {
                 return "";
         }
