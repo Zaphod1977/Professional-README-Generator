@@ -1,11 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-        if (data.license === 'Apache') {
+        if (license === 'Apache') {
                 return "![license](//img.shields.io/badge/License-Apache_2.0-blue.svg)";
-        } else if (data.license === 'Boose') {
+        } else if (license === 'Boose') {
                 return "![license](//img.shields.io/badge/License-Boost_1.0-lightblue.svg)";
-        } else if (data.license === 'BSD') {
+        } else if (license === 'BSD') {
                 return "![license](//img.shields.io/badge/License-BSD_3--Clause-blue.svg)"
         } else {
                 return "";
@@ -15,11 +15,11 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-        if (data.license === 'Apache') {
+        if (license === 'Apache') {
                 return "![license](https://opensource.org/licenses/Apache-2.0)";
-        } else if (data.license === 'Boose') {
+        } else if (license === 'Boose') {
                 return "![license](https://www.boost.org/LICENSE_1_0.txt)";
-        } else if (data.license === 'BSD') {
+        } else if (license === 'BSD') {
                 return "![license](https://opensource.org/licenses/BSD-3-Clause)";
         } else {
                 return "";
@@ -28,7 +28,9 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) {
+        return "## License <br/>" + renderLicenseBadge(license) + renderLicenseLink(license)
+ }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -45,8 +47,10 @@ function generateMarkdown(data) {
                 "<h2>Usage " + "<br/>" +
                 "<p>" + data.usage + "<br/>" +
 
-                "<h2>License " + "<br/>" +
-                "<p>" + data.license + "<br/>" +
+                // "<h2>License " + "<br/>" +
+                // "<p>" + data.license + "<br/>" +
+                renderLicenseSection(data.license) + 
+
 
                 "<h2>Contributors " + "<br/>" +
                 "<p>" + data.contributing + "<br/>" +
