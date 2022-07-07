@@ -61,7 +61,7 @@ function generateMarkdown(data) {
                 "<h2>Usage</h2> " +
                 "<p>" + data.usage + "</p>" +
                 "[![Demo Image](https://github.com/Zaphod1977/Professional-README-Generator/blob/main/utils/readme_gen.gif?raw=true)]" + "\n" +
-                "[Demo Video: ](https://youtu.be/PXRsAH7zL2A)" + "\n" +
+                "[Demo Video: ](https://youtu.be/JfBLfqhFG7Q)" + "\n" +
 
                 "<h2>Contributors</h2> " +
                 "<p>" + data.contributing + "</p>" +
