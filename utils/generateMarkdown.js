@@ -60,7 +60,8 @@ function generateMarkdown(data) {
 
                 "<h2>Usage</h2> " +
                 "<p>" + data.usage + "</p>" +
-                "<p>[Demo Video](../Professional-README-Generator/utils/readme_gen.gif/) </p>" + "\n" +
+                "<p>[Demo Image](../Professional-README-Generator/utils/readme_gen.gif) </p>" + "\n" +
+                "<p>[Demo Video](https://youtu.be/PXRsAH7zL2A) </p>" + "\n" +
 
                 "<h2>Contributors</h2> " +
                 "<p>" + data.contributing + "</p>" +
