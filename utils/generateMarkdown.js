@@ -29,9 +29,12 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-        return "<h2> License </h2><br/>" + renderLicenseBadge(license) + renderLicenseLink(license)
+        if (license) {
+                return "<h2> License </h2>\n" + renderLicenseBadge(license) + renderLicenseLink(license)
+        } else {
+                return "";
+        }
 }
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
         console.log("can you see me")
@@ -40,9 +43,15 @@ function generateMarkdown(data) {
 
                 renderLicenseSection(data.license) +
 
-                "<h2> Table of Contents </h2>" +
-                "* [License](#license) " +
-                "* [Description](#description) " +
+                "<h2> Table of Contents </h2> \n" +
+                "- [License](#license) " + "\n" +
+                "- [Description](#description) " + "\n" +
+                "- [Installation](#installation) " + "\n" +
+                "- [Usage](#usage) " + "\n" +
+                "- [Contributors](#contributors) " + "\n" +
+                "- [Testing](#testing) " + "\n" +
+                "- [Github Link](#github) " + "\n" +
+                "- [Email Address](#email) " + "\n" +
 
                 "<h2>Description</h2> " +
                 "<p>" + data.description + "</p>" +
@@ -52,6 +61,7 @@ function generateMarkdown(data) {
 
                 "<h2>Usage</h2> " +
                 "<p>" + data.usage + "</p>" +
+                // "[gif]("direct to my file")"
 
                 "<h2>Contributors</h2> " +
                 "<p>" + data.contributing + "</p>" +
@@ -60,13 +70,10 @@ function generateMarkdown(data) {
                 "<p>" + data.tests + "</p>" +
 
                 "<h2>Github Link</h2> " +
-                "<p>" + data.github + "</p><br/>" +
+                "<p>" + data.github + "</p>" +
 
                 "<h2>Email Address</h2>" +
                 "<p>" + data.email + "</p>";
-
-
-        // return `# ${data.title}
 }
 
 export default generateMarkdown;
