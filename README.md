@@ -10,3 +10,4 @@
 - [Email](#email) 
 <h2>Description</h2> <p>This is an app to automate the process of building a readme.md file.</p><h2>Installation</h2> <p>Open terminal and run the command "node index.js"</p><h2>Usage</h2> <p>This is a time saving app to produce rich and useful readme files.
 <h2>Contributors</h2> <p>Myself and the source code provider.</p><h2>Testing</h2> <p>NO</p><h2>Github Link</h2> <p>https://github.com/Zaphod1977</p><h2>Email Address</h2><p>Bobby@nunya.com</p>
+<p> <img src="https://github.com/Zaphod1977/Readme-Magic-Box/blob/main/assets/readme_gen.gif" width="800"/> </p>
